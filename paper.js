@@ -7,4 +7,4 @@ class paper {
             'density':1.2
         }
     }
-}
+} 

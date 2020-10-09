@@ -1,4 +1,3 @@
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -6,7 +5,7 @@ const Body = Matter.Body;
 
 function preload()
 {
-	
+
 }
 
 function setup() {
@@ -23,7 +22,7 @@ dustbin1 = new dustbin(530,500,150,15);
 dustbin2 = new dustbin(510,480,15,50);
 dustbin3 = new dustbin(550,520,15,50);
 	Engine.run(engine);
-  
+
 }
 
 
@@ -43,10 +42,10 @@ function draw() {
   dustbin1.display();
   dustbin2.display();
   dustbin3.display();
-  
+
   keyPressed();
   drawSprites();
- 
+
 }
 
 function keyPressed(){
@@ -54,5 +53,3 @@ function keyPressed(){
 		Matter.Body.applyForce(paper1.body, paper1.body.position, {x:85,y:-85})
 	}
 }
-
-
